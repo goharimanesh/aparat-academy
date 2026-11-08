@@ -1,0 +1,49 @@
+# همگام‌سازی خودکار با کانال آپارات — هر ۶ ساعت
+# Powered by Dr. Masoud Goharimanesh
+name: Sync Aparat videos
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "پیمایش کامل همهٔ صفحه‌های کانال (پوسترها و بازدیدها)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-aparat
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch new videos from Aparat
+        env:
+          CI: "true"
+        run: |
+          if [ "${{ github.event.inputs.full }}" = "true" ]; then
+            python scripts/aparat_sync.py sync --full
+          else
+            python scripts/aparat_sync.py sync
+          fi
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- data/videos.json; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name  "aparat-sync-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/videos.json
+          git commit -m "sync: به‌روزرسانی خودکار آموزش‌ها از آپارات"
+          git push
