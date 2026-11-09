@@ -29,7 +29,7 @@ CATS = os.path.join(DATA, "categories.json")
 OVERRIDES = os.path.join(DATA, "overrides.json")
 SERIES = os.path.join(DATA, "series.json")
 USERNAME = os.environ.get("APARAT_USERNAME", "goharimanesh")
-UA = "Mozilla/5.0 (compatible; AparatAcademySync/1.0)"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
 # ------------------------------------------------------------------ text utils
 FA_DIGITS = str.maketrans("۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩", "01234567890123456789")
@@ -350,7 +350,7 @@ def http_json(url, tries=3):
     last = None
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json, text/plain, */*", "Accept-Language": "fa-IR,fa;q=0.9,en;q=0.8", "Referer": "https://www.aparat.com/"})
             with urllib.request.urlopen(req, timeout=30) as r:
                 return json.loads(r.read().decode("utf-8", "replace"))
         except Exception as e:  # noqa
