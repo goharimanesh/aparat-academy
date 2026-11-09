@@ -1,8 +1,8 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-08T03:08:36Z",
-"count":749,
+"generated":"2026-11-09T00:30:21Z",
+"count":775,
 "series":[
 {
 "id":"endnote",
@@ -76,7 +76,7 @@
 {
 "id":"taguchi",
 "title":"طراحی آزمایش و روش تاگوچی",
-"count":16,
+"count":17,
 "cat":"design",
 "uids":[
 "n5802tk",
@@ -94,10 +94,11 @@
 "q93l7b0",
 "a1w47",
 "oDO6e",
-"rgb4ggn"
+"rgb4ggn",
+"nxhpri0"
 ],
-"views":36344,
-"duration":20882
+"views":36355,
+"duration":22081
 },
 {
 "id":"thesis",
@@ -122,7 +123,7 @@
 {
 "id":"dof",
 "title":"درجهٔ آزادی و مبانی دینامیک ماشین",
-"count":12,
+"count":13,
 "cat":"mechanisms",
 "uids":[
 "a36or88",
@@ -136,10 +137,11 @@
 "qko62",
 "f84dy6f",
 "e43t66t",
-"mlcs677"
+"mlcs677",
+"kegldz9"
 ],
-"views":11513,
-"duration":18257
+"views":11525,
+"duration":19200
 },
 {
 "id":"matlab-handbook",
@@ -422,7 +424,7 @@
 "rdn66v0",
 "occs683"
 ],
-"views":3274,
+"views":3281,
 "duration":10739
 },
 {
@@ -468,7 +470,7 @@
 {
 "id":"vib-model",
 "title":"مدل‌سازی جرم–فنر–دمپر و روش DAS",
-"count":9,
+"count":10,
 "cat":"vibration",
 "uids":[
 "w22cn7m",
@@ -479,10 +481,11 @@
 "y02q9q7",
 "u865h12",
 "gmla9js",
-"eai89i8"
+"eai89i8",
+"eon648d"
 ],
-"views":2823,
-"duration":12614
+"views":2830,
+"duration":13493
 },
 {
 "id":"wind-turbine",
@@ -565,16 +568,17 @@
 {
 "id":"ik",
 "title":"سینماتیک مستقیم و معکوس",
-"count":4,
+"count":5,
 "cat":"robotics",
 "uids":[
 "t06i090",
 "ET9hI",
 "f98q4iv",
-"xmc5ex9"
+"xmc5ex9",
+"foz14du"
 ],
-"views":2116,
-"duration":5126
+"views":2120,
+"duration":5878
 },
 {
 "id":"solid-motion",
@@ -591,6 +595,30 @@
 ],
 "views":2003,
 "duration":6289
+},
+{
+"id":"aem-1405",
+"title":"ریاضی مهندسی پیشرفته (کارشناسی ارشد)",
+"count":14,
+"cat":"math",
+"uids":[
+"xznn8y3",
+"zvl29d0",
+"chul8li",
+"dlc3b15",
+"pfi159q",
+"rnzra7f",
+"vcc6h3p",
+"gpn4o23",
+"ujvy8pm",
+"uql72xg",
+"bzxix31",
+"uih1j23",
+"mkx2b85",
+"rlv920k"
+],
+"views":1794,
+"duration":22836
 },
 {
 "id":"python",
@@ -613,31 +641,9 @@
 "duration":29602
 },
 {
-"id":"aem-1405",
-"title":"ریاضی مهندسی پیشرفته (کارشناسی ارشد)",
-"count":12,
-"cat":"math",
-"uids":[
-"xznn8y3",
-"zvl29d0",
-"chul8li",
-"dlc3b15",
-"pfi159q",
-"rnzra7f",
-"vcc6h3p",
-"gpn4o23",
-"ujvy8pm",
-"uql72xg",
-"bzxix31",
-"uih1j23"
-],
-"views":1769,
-"duration":20650
-},
-{
 "id":"measure",
 "title":"سیستم‌های اندازه‌گیری و سنسورها",
-"count":7,
+"count":15,
 "cat":"sensing",
 "uids":[
 "e52l3c9",
@@ -646,10 +652,18 @@
 "6Sux7",
 "p94gfz3",
 "x1428og",
-"x52460s"
+"x52460s",
+"ctx22b0",
+"gmcj423",
+"ybkp2e2",
+"haup1r5",
+"szrz90g",
+"ptrh2k0",
+"itb594v",
+"nsdx491"
 ],
-"views":1619,
-"duration":11001
+"views":1729,
+"duration":20450
 },
 {
 "id":"fuzzy-rl-vehicle",
@@ -857,6 +871,20 @@
 "duration":7071
 },
 {
+"id":"virtual-uni",
+"title":"آموزش مجازی در دانشگاه",
+"count":4,
+"cat":"university",
+"uids":[
+"yfp4j8e",
+"ioloc69",
+"vte0d0w",
+"kfssqh4"
+],
+"views":393,
+"duration":3219
+},
+{
 "id":"car-modes",
 "title":"مودهای ارتعاشی سازهٔ خودرو",
 "count":5,
@@ -870,20 +898,6 @@
 ],
 "views":371,
 "duration":50
-},
-{
-"id":"virtual-uni",
-"title":"آموزش مجازی در دانشگاه",
-"count":4,
-"cat":"university",
-"uids":[
-"yfp4j8e",
-"ioloc69",
-"vte0d0w",
-"kfssqh4"
-],
-"views":337,
-"duration":3219
 },
 {
 "id":"rm-cell",
@@ -905,15 +919,16 @@
 {
 "id":"mech1",
 "title":"مکاترونیک ۱",
-"count":3,
+"count":4,
 "cat":"sensing",
 "uids":[
 "qfuy503",
 "uaomay4",
-"mwv8y17"
+"mwv8y17",
+"pulb666"
 ],
-"views":164,
-"duration":3176
+"views":165,
+"duration":3982
 },
 {
 "id":"trms",
@@ -925,15 +940,457 @@
 "gwc9rnv",
 "xvh23n2"
 ],
-"views":45,
+"views":70,
 "duration":15098
 }
 ],
 "videos":[
 {
+"uid":"rlv920k",
+"title":"پادکست جلسه دوم درس ریاضی مهندسی پیشرفته: مقدمه ای بر پردازش سیگنال",
+"views":0,
+"likes":0,
+"duration":910,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74132872-4731-l__3107.jpg?width=900&quality=90&secret=AGlXlgnm2NICnCgJMOIo9Q",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/18",
+"time":"03:27",
+"ts":140508180327,
+"cat":"math",
+"series":"aem-1405"
+},
+{
+"uid":"pulb666",
+"title":"پادکست جلسه دوم مکاترونیک 1: اصول سامانه های الکترومکانیکی",
+"views":1,
+"likes":0,
+"duration":806,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74130959-4022-l__6503.jpg?width=900&quality=90&secret=aGX5gaikOi-Iin-kcCZ03Q",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/17",
+"time":"22:54",
+"ts":140508172254,
+"cat":"sensing",
+"series":"mech1"
+},
+{
+"uid":"nsdx491",
+"title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 8: اندازه گیری دما",
+"views":8,
+"likes":0,
+"duration":926,
+"tags":[
+"انازه گی"
+],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74119968-7178-l__7865.jpg?width=900&quality=90&secret=F7BJxs-TTMuhGPH2sHBsSQ",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/17",
+"time":"11:11",
+"ts":140508171111,
+"cat":"sensing",
+"series":"measure"
+},
+{
+"uid":"foz14du",
+"title":"پادکست جلسه هفتم رباتیک: سینماتیک معکوس یک ربات سری",
+"views":4,
+"likes":0,
+"duration":752,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74117049-9857-l__3257.jpg?width=900&quality=90&secret=SXfM_KIt8dDYywioMZKmwg",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/17",
+"time":"05:29",
+"ts":140508170529,
+"cat":"robotics",
+"series":"ik"
+},
+{
+"uid":"trfaad8",
+"title":"پادکست بخش دوم جلسه هشتم هوش مصنوعی- کد نویسی در یک مثال واقعی",
+"views":7,
+"likes":0,
+"duration":1137,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74117045-8288-l__8175.jpg?width=900&quality=90&secret=waCfImtbvimXh_6INR8L8A",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/17",
+"time":"05:28",
+"ts":140508170528,
+"cat":"ai",
+"series":null
+},
+{
+"uid":"itb594v",
+"title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 7: فناوری نمایشگر OLED و کاربرد آن در آردوینو",
+"views":18,
+"likes":0,
+"duration":1152,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74044101-1989-l__5704.jpg?width=900&quality=90&secret=pG_UXGVZFQ7Ow57PxO1c9g",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/12",
+"time":"17:30",
+"ts":140508121730,
+"cat":"sensing",
+"series":"measure"
+},
+{
+"uid":"kxp2f0p",
+"title":"پادکست جلسه هشتم هوش مصنوعی: ماشین بردار پشتیبان",
+"views":10,
+"likes":0,
+"duration":1381,
+"tags":[
+"ماشن بردار پشتیبان"
+],
+"desc":"https://goharimanesh.github.io/AI/",
+"poster":"https://static.cdn.asset.aparat.com/avt/74033285-7566-l__7994.jpg?width=900&quality=90&secret=RYiutzySSas351VrfniEgQ",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/11",
+"time":"22:46",
+"ts":140508112246,
+"cat":"ai",
+"series":null
+},
+{
+"uid":"rpx2mue",
+"title":"پادکست جلسه اول مکاترونیک1: نقشه راه",
+"views":8,
+"likes":1,
+"duration":895,
+"tags":[],
+"desc":"https://goharimanesh.github.io/Mechatronics-1/",
+"poster":"https://static.cdn.asset.aparat.com/avt/74033249-5484-l__7304.jpg?width=900&quality=90&secret=gD-uwf-Ylr8hx1xvLMzNbA",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/11",
+"time":"22:43",
+"ts":140508112243,
+"cat":"sensing",
+"series":null
+},
+{
+"uid":"mkx2b85",
+"title":"پادکست جلسه اول درس ریاضی مهندسی پیشرفته: نقشه راه",
+"views":25,
+"likes":0,
+"duration":1276,
+"tags":[],
+"desc":"برای دسترسی به فایلهای این جلسه و آموزشهای دیگر به این آدرس بروید:\nhttps://goharimanesh.github.io/math",
+"poster":"https://static.cdn.asset.aparat.com/avt/74033127-5181-l__6726.jpg?width=900&quality=90&secret=Ax8S5M0pG1FGd310mPWdaA",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/11",
+"time":"22:35",
+"ts":140508112235,
+"cat":"math",
+"series":"aem-1405"
+},
+{
+"uid":"nxhpri0",
+"title":"بخش تکمیلی جلسه هفتم هوش مصنوعی: مثال های عینی و دقیق برای طراحی آزمایش به روش تاگوچی",
+"views":11,
+"likes":0,
+"duration":1199,
+"tags":[
+"هوش مصنوعی",
+"تاگوچی",
+"طراحی آزمایش",
+"هوش مصنوعی"
+],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74004964-9288-l__4516.jpg?width=900&quality=90&secret=xx5LrlYHvZGW9lGY12Y4CA",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/10",
+"time":"05:53",
+"ts":140508100553,
+"cat":"design",
+"series":"taguchi"
+},
+{
+"uid":"qlz82p2",
+"title":"پادکست جلسه ششم رباتیک: انتقال ربات از سالید به سیم اسکیپ",
+"views":6,
+"likes":0,
+"duration":1278,
+"tags":[
+"URDF",
+"سیم اسکیپ"
+],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74004940-2133-l__6124.jpg?width=900&quality=90&secret=vER2HkOhZkopa_r3cFsiCQ",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/10",
+"time":"05:45",
+"ts":140508100545,
+"cat":"robotics",
+"series":null
+},
+{
+"uid":"kegldz9",
+"title":"آزمایشگاه دینامیک، ماشین و ارتعاشات: شناسایی هندسه مکانیزم ها",
+"views":7,
+"likes":0,
+"duration":943,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74004929-2795-l__2233.jpg?width=900&quality=90&secret=ogqTfpLhZ5nys-RfK4JLfg",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/10",
+"time":"05:41",
+"ts":140508100541,
+"cat":"mechanisms",
+"series":"dof"
+},
+{
+"uid":"ptrh2k0",
+"title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 6: از پردازش تصویر تا کنترل خروجی با آردیونو",
+"views":25,
+"likes":0,
+"duration":1033,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/73923014-9525-l__9663.jpg?width=900&quality=90&secret=rw0WLFwxCuLHoTdi6YPlYg",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"20:43",
+"ts":140508042043,
+"cat":"sensing",
+"series":"measure"
+},
+{
+"uid":"kbwws55",
+"title":"جلسه هفتم هوش مصنوعی: تحلیل داده و طراحی آزمایش",
+"views":16,
+"likes":1,
+"duration":1437,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911611-1980-l__1704.jpg?width=900&quality=90&secret=GJdw6GxABzWPIBw7tEQLGw",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"04:55",
+"ts":140508040455,
+"cat":"design",
+"series":null
+},
+{
+"uid":"zya7636",
+"title":"جلسه ششم هوش مصنوعی: جنگل تصادفی",
+"views":21,
+"likes":1,
+"duration":1123,
+"tags":[
+"جنگل تصادف"
+],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911418-3333-l__2292.jpg?width=900&quality=90&secret=Tor9PwGJw00hlObRXOfRzA",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"03:37",
+"ts":140508040337,
+"cat":"ai",
+"series":null
+},
+{
+"uid":"fieas2e",
+"title":"جلسه پنجم هوش مصنوعی: رگرسیون و طبقه بندی",
+"views":11,
+"likes":1,
+"duration":1154,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911411-1390-l__1586.jpg?width=900&quality=90&secret=TDvErvoJSmYOaxYAr2gVWA",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"03:36",
+"ts":140508040336,
+"cat":"ai",
+"series":null
+},
+{
+"uid":"eon648d",
+"title":"جلسه چهارم هوش مصنوعی: شناسایی سیستم جرم و فنر و دمپر",
+"views":7,
+"likes":0,
+"duration":879,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911408-6068-l__4948.jpg?width=900&quality=90&secret=44CdV9zp4TmARR62vJU4jA",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"03:35",
+"ts":140508040335,
+"cat":"ai",
+"series":"vib-model"
+},
+{
+"uid":"pnk2it5",
+"title":"جلسه سوم هوش مصنوعی- بخش دوم: تخمین پارامتر و شناسایی سیستم",
+"views":12,
+"likes":0,
+"duration":1410,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911309-3063-l__2188.jpg?width=900&quality=90&secret=vau0ED62yYqq32O6uns2lw",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"02:57",
+"ts":140508040257,
+"cat":"ai",
+"series":null
+},
+{
+"uid":"sts4p81",
+"title":"جلسه سوم هوش مصنوعی-بخش اول: استخراج داده از طریق دیجیتایزرها",
+"views":6,
+"likes":1,
+"duration":1104,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911286-7885-l__8620.jpg?width=900&quality=90&secret=JlVIjUgWC5DKg0K1jix5mQ",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"02:48",
+"ts":140508040248,
+"cat":"ai",
+"series":null
+},
+{
+"uid":"dnyn8tn",
+"title":"جلسه دوم هوش مصنوعی: آینده پژوهی",
+"views":24,
+"likes":0,
+"duration":1148,
+"tags":[
+"چرخه گارتنر",
+"مهندسی مکانیکهوش مصنوعی"
+],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911271-7571-l__5399.jpg?width=900&quality=90&secret=28aaQ2Pzcj1TGSMz5AEaFw",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"02:45",
+"ts":140508040245,
+"cat":"ai",
+"series":null
+},
+{
+"uid":"brd7z0z",
+"title":"جلسه اول هوش مصنوعی: نقشه راه در  مهندس مکانیک (مقدمه)",
+"views":26,
+"likes":0,
+"duration":1346,
+"tags":[
+"مهندسی مکانیک",
+"هوش مصنوعی",
+"AI",
+"هوش مصنوعی"
+],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911259-8485-l__8082.jpg?width=900&quality=90&secret=1p1VvoEgRydRq2Gkswffyg",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"02:43",
+"ts":140508040243,
+"cat":"ai",
+"series":null
+},
+{
+"uid":"szrz90g",
+"title":"سیستم‌های اندازه‌گیری و کنترل | جلسه ۵: آشنایی با Arduino — اولین قدم عملی",
+"views":11,
+"likes":0,
+"duration":1327,
+"tags":[],
+"desc":"️ پادکست جلسه ۵ — سیستم‌های اندازه‌گیری و کنترل\nدکتر مسعود گوهری‌منش | دانشیار گروه مهندسی مکانیک، دانشگاه تربت حیدریه\n\nاز نظریه به عمل — با Arduino UNO اولین سیستم اندازه‌گیری واقعی خود را می‌سازید.\n\n در این پادکست می‌شنوید:\n معرفی Arduino UNO و ساختار سخت‌افزاری آن\n نصب IDE و اولین برنامه Blink\n ساختار کلی برنامه‌نویسی Arduino (setup و loop)\n نکات کاربردی برای شروع پروژه‌محور\n\n مدت: حدود ۲۰ دقیقه\n وب‌سایت تعاملی دوره:\nhttps://goharimanesh.github.io/Measurement-Class/\n\n برای دنبال‌کردن ادامه دوره، کانال را Subscribe کنید.\n\n#آردوینو #Arduino_UNO #برنامه_نویسی #مهندسی_مکانیک #سیستم_های_اندازه_گیری",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911201-2203-l__1420.jpg?width=900&quality=90&secret=GU7ccjAepr_xgpjxMZB6bw",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"02:23",
+"ts":140508040223,
+"cat":"sensing",
+"series":"measure"
+},
+{
+"uid":"haup1r5",
+"title":"سیستم‌های اندازه‌گیری و کنترل | جلسه ۴: دقت و صحت— چقدر می‌توان به اندازه‌گیری اعتماد کرد؟",
+"views":9,
+"likes":0,
+"duration":1441,
+"tags":[],
+"desc":"️ پادکست جلسه ۴ — سیستم‌های اندازه‌گیری و کنترل\nدکتر مسعود گوهری‌منش | دانشیار گروه مهندسی مکانیک، دانشگاه تربت حیدریه\n\nهر اندازه‌گیری، عدم قطعیت دارد — در این پادکست یاد می‌گیریم آن را کمّی کنیم و به نتیجه اعتماد کنیم.\n\n در این پادکست می‌شنوید:\n تفاوت دقت (Accuracy) و صحت (Precision)\n خطاهای سیستماتیک و تصادفی\n بودجه عدم قطعیت و روش محاسبه آن\n مشخصات کلیدی سنسور: حساسیت، بازه، پاسخ فرکانسی\n\n مدت: حدود ۲۰ دقیقه\n وب‌سایت تعاملی دوره:\nhttps://goharimanesh.github.io/Measurement-Class/\n\n برای دنبال‌کردن ادامه دوره، کانال را Subscribe کنید.\n\n#عدم_قطعیت #دقت_اندازه_گیری #صحت_اندازه_گیری #سنسور #مهندسی_مکانیک",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911192-5542-l__9347.jpg?width=900&quality=90&secret=UsxL96KN2-KNwBbQXsJgww",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"02:21",
+"ts":140508040221,
+"cat":"sensing",
+"series":"measure"
+},
+{
+"uid":"ybkp2e2",
+"title":"سیستم‌های اندازه‌گیری و کنترل | جلسه ۳: دستگاه یکاهای SI — زبان مشترک مهندسان جهان",
+"views":12,
+"likes":0,
+"duration":958,
+"tags":[
+"یکای اندازه گی"
+],
+"desc":"️ پادکست جلسه ۳ — سیستم‌های اندازه‌گیری و کنترل\nدکتر مسعود گوهری‌منش | دانشیار گروه مهندسی مکانیک، دانشگاه تربت حیدریه\n\nبدون یکای درست، هیچ اندازه‌گیری معتبر نیست — پایه‌های SI و تحلیل دیمانسپون را مرور می‌کنیم.\n\n در این پادکست می‌شنوید:\n هفت کمیت پایه SI و یکاهای آن‌ها\n یکاهای مشتق‌شده و کاربردهای مهندسی\n تحلیل دیمانسپون و اهمیت آن در صحت معادلات\n اشتباهات رایج یکایی و راه پیشگیری\n\n مدت: حدود ۲۰ دقیقه\n وب‌سایت تعاملی دوره:\nhttps://goharimanesh.github.io/Measurement-Class/\n\n برای دنبال‌کردن ادامه دوره، کانال را Subscribe کنید.\n\n#دستگاه_یکاها #SI #تحلیل_دیمانسپون #مهندسی_مکانیک #اندازه_گیری",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911188-8147-l__1582.jpg?width=900&quality=90&secret=bZ1CqLu_J_pai9Se2HzXfg",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"02:20",
+"ts":140508040220,
+"cat":"sensing",
+"series":"measure"
+},
+{
+"uid":"gmcj423",
+"title":"سیستم‌های اندازه‌گیری و کنترل | جلسه ۲: سیگنال‌ها و استانداردهای صنعتی — چرا ۴-۲۰mA همه‌جا حاضر است؟",
+"views":8,
+"likes":1,
+"duration":1132,
+"tags":[
+"سیگنال صنعت"
+],
+"desc":"️ پادکست جلسه ۲ — سیستم‌های اندازه‌گیری و کنترل\nدکتر مسعود گوهری‌منش | دانشیار گروه مهندسی مکانیک، دانشگاه تربت حیدریه\n\nزبان مشترک سنسورها و کنترل‌کننده‌ها را بشناسید و بفهمید چرا صنعت به استانداردهای خاصی پایبند است.\n\n در این پادکست می‌شنوید:\n سیگنال آنالوگ و دیجیتال — تفاوت و کاربرد\n استاندارد ۴-۲۰ میلی‌آمپر و مزایای آن\n PWM و نقش آن در کنترل\n چرا استانداردسازی سیگنال، کلید اتوماسیون صنعتی است\n\n مدت: حدود ۲۰ دقیقه\n وب‌سایت تعاملی دوره:\nhttps://goharimanesh.github.io/Measurement-Class/\n\n برای دنبال‌کردن ادامه دوره، کانال را Subscribe کنید.\n\n#سیگنال_صنعتی #۴_۲۰mA #PWM #اتوماسیون_صنعتی #مهندسی_مکانیک",
+"poster":"https://static.cdn.asset.aparat.com/avt/73911173-7180-l__4233.jpg?width=900&quality=90&secret=kFx9VzKc1lBdBZZVPElKWA",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/04",
+"time":"02:15",
+"ts":140508040215,
+"cat":"sensing",
+"series":"measure"
+},
+{
+"uid":"ctx22b0",
+"title":"جلسه ۱ (پادکست صوتی) — سنسور، ترانسدیوسر، ترانسمیتر | سیستم‌های اندازه‌گیری و کنترل",
+"views":19,
+"likes":1,
+"duration":1480,
+"tags":[],
+"desc":"️ پادکست جلسه اول — سیستم‌های اندازه‌گیری و کنترل\nدکتر مسعود گوهری‌منش | دانشیار گروه مهندسی مکانیک، دانشگاه تربت حیدریه\n\nاین فایل صوتی، پادکست مکمل جلسه اول کلاس است که با اینفوگرافی ایستا همراه شده تا مفاهیم کلیدی را در حین شنیدن، به‌صورت بصری نیز مرور کنید. پادکست‌های این دوره در پایان هر جلسه منتشر می‌شوند تا دانشجویان بتوانند مفاهیم را عمیق‌تر مرور کنند.\n\n در این پادکست چه می‌شنوید؟\n\nابتدا دوره ۲۴ جلسه‌ای در ۶ فاز معرفی می‌شود — مبانی نظری، مهارت‌های پایه Arduino، سنسورهای پایه، سنسورهای پیشرفته، اینترنت اشیا و تحلیل داده، و پروژه و یکپارچه‌سازی. رویکرد دوره پروژه‌محور است بر پایه Arduino UNO، ESP32 و ESP32-CAM با بیش از ۱۰ سنسور واقعی و ۲۰ پروژه زنجیره‌ای.\n\nسپس وارد محتوای جلسه اول می‌شویم و سه مفهوم بنیادین را از هم تفکیک می‌کنیم:\n\n اندازه‌گیری چیست و چرا همیشه «عدد + یکا» است؟\n سنسور (Sensor) — قلب سیستم اندازه‌گیری\n ترانسدیوسر (Transducer) — مبدل انرژی، مفهومی عام‌تر از سنسور\n ترانسمیتر (Transmitter) — چرا صنعت بدون آن نمی‌تواند کار کند؟\n مثال کلیدی ترموکوپل — نمونه‌ای که هم سنسور است و هم ترانسدیوسر\n بلوک‌دیاگرام کامل سیستم اندازه‌گیری\n کاربردهای روزمره: از گوشی هوشمند تا خودروی هوشمند\n\n مدت پادکست: حدود ۲۰ دقیقه\n️ همراه با اینفوگرافی ایستا از مفاهیم کلیدی\n منبع پیشنهادی: Sensors and Transducers — Ian Sinclair (فصل ۱)\n\n وب‌سایت تعاملی دوره (جزوه، اسلایدها، جلسات و پادکست‌ها):\nhttps://goharimanesh.github.io/Measurement-Class/\n\n برای دنبال‌کردن ادامه دوره، کانال را Subscribe کنید.\n\n#سیستم_های_اندازه_گیری #سنسور #ترانسدیوسر #ترانسمیتر #ترموکوپل #مهندسی_مکانیک #آردوینو #ESP32 #دانشگاه_تربت_حیدریه #پادکست_مهندسی",
+"poster":"https://static.cdn.asset.aparat.com/avt/73908384-8962-l__5987.jpg?width=900&quality=90&secret=XOhbwHB9HcgZ-_NDGoourg",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/03",
+"time":"21:11",
+"ts":140508032111,
+"cat":"sensing",
+"series":"measure"
+},
+{
 "uid":"vkcew3q",
 "title":"۲ خط کد در مقابل ۱۲ خط: تفاوت هوش مصنوعی و هوش خلاق انسانی با یک مثال عملی در متلب",
-"views":24,
+"views":43,
 "likes":2,
 "duration":728,
 "tags":[
@@ -942,7 +1399,7 @@
 "برنامه نویسی"
 ],
 "desc":"در این ویدیوی آموزشی، قصد داریم یکی از مهم‌ترین مفاهیم برنامه‌نویسی و مهندسی نرم‌افزار را با یک مثال کاملاً عملی و قابل درک بررسی کنیم:\nتفاوت بنیادین بین «هوش مصنوعی مولد» (مانند مدل‌های دیپ‌سیک، ChatGPT و مشابه) و «هوش خلاق و مبتنی بر تجربه انسانی».\nبسیاری از دانشجویان و حتی مهندسان جوان گمان می‌کنند که هوش مصنوعی می‌تواند جای یک برنامه‌نویس خبره را بگیرد. این تصور تا جایی درست است که کار به مسائل تکراری و الگوریتم‌های کلاسیک برسد. اما چالش واقعی جایی آغاز می‌شود که نیاز به خلاقیت، ترفندهای نانوشته و سال‌ها تجربه عملی داریم.\nآزمایش عملی این ویدیو:\n از هوش مصنوعی (مدل DeepSeek و ChatGPT) درخواست می‌کنیم کدی در متلب بنویسد که یک دایره سفید بزرگ‌تر و یک دایره قرمز کوچک‌تر، هم‌مرکز و توپر را رسم کند.\n هوش مصنوعی کدی حدود ۱۲ خط ارائه می‌دهد، با تعریف شعاع، استفاده از rectangle یا viscircles و روش‌های کلاسیک هندسی.\n سپس یک برنامه‌نویس خبره با بیش از ۲۰ سال تجربه، همان خروجی را تنها با ۲ خط کد اصلی و با استفاده از یک ترفند ساده اما غیرمنتظره (بزرگ کردن Marker در دستور plot) پیاده‌سازی می‌کند.\n نتیجه: کد انسانی هم مختصرتر است، هم منابع کمتری مصرف می‌کند و هم از حیث خوانایی و نگهداری برتر است.\nنکته کلیدی ویدیو:\nهوش مصنوعی به شما «کد درست» می‌دهد، اما «کد هوشمندانه و خلاقانه» را فقط یک انسان با تجربه می‌تواند بنویسد. هوش مصنوعی به داده‌های آموزشی خود محدود است، در حالی که ذهن خلاق انسانی از مرزهای الگوها عبور می‌کند.\nاین ویدیو برای چه کسانی مفید است؟\nدانشجویان مهندسی کامپیوتر، برق، مکانیک و علوم داده\nبرنامه‌نویسانی که از متلب برای پروژه‌های علمی استفاده می‌کنند\nهر کسی که می‌خواهد بداند چگونه از هوش مصنوعی به عنوان دستیار استفاده کند، نه جایگزین تفکر خودش\nسوال پایانی ویدیو برای بحث در کلاس:\nاگر شما جای هوش مصنوعی بودید، چه راه‌حل خلاقانه‌ی دیگری به جز روش MarkerSize پیشنهاد می‌کردید؟ آیا می‌توان در یک خط کد هم این کار را انجام داد؟",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/71338165-2479-l__4666.jpg?width=900&quality=90&secret=vAR85mBCbutLTzmZKOqovA",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1405/03/14",
 "time":"00:23",
@@ -953,7 +1410,7 @@
 {
 "uid":"xvh23n2",
 "title":"مدل سازی  و شبیه سازی TRMS- جلسه سوم( آماده سازی درفت مقاله و کنترل نهایی)",
-"views":15,
+"views":20,
 "likes":0,
 "duration":7035,
 "tags":[
@@ -962,7 +1419,7 @@
 "Twin Rotor MIMO System"
 ],
 "desc":"این ویدیو را در اول صبح ضبط کردم و دو ساعت تمام معادلات را دوباره، بررسی کردم و در نهایت با تنظیم پارامترهای ششگانه کنترل کننده، سیستم را کنترل کردم.",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/70584586-8598-l__3893.jpg?width=900&quality=90&secret=XuqLzmanlrxgOB-txvARpA",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1405/02/22",
 "time":"11:01",
@@ -973,7 +1430,7 @@
 {
 "uid":"gwc9rnv",
 "title":"مدل سازی  و شبیه سازی TRMS- جلسه دوم ( شبیه سازی در سیمولینک)",
-"views":14,
+"views":22,
 "likes":0,
 "duration":5064,
 "tags":[
@@ -983,7 +1440,7 @@
 "رباتیک پیشرفته"
 ],
 "desc":"",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/70584379-6102-l__5931.jpg?width=900&quality=90&secret=Lq472QTFYNifFdyG7vcy0A",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1405/02/22",
 "time":"10:56",
@@ -994,7 +1451,7 @@
 {
 "uid":"aegdv55",
 "title":"مدل سازی  و شبیه سازی TRMS- جلسه اول ( مقدمات و بیان مسئله  و معادلات)",
-"views":16,
+"views":28,
 "likes":0,
 "duration":2999,
 "tags":[
@@ -1004,7 +1461,7 @@
 "رباتیک پیشرفته"
 ],
 "desc":"",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/70584259-7056-l__4346.jpg?width=900&quality=90&secret=DBBlTu2flzOoBlqTDVs1Vw",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1405/02/22",
 "time":"10:53",
@@ -1015,7 +1472,7 @@
 {
 "uid":"izc15y5",
 "title":"کارگاه خلاقیت در تدریس مجازی",
-"views":29,
+"views":38,
 "likes":1,
 "duration":6205,
 "tags":[
@@ -1024,7 +1481,7 @@
 "تدریس مجازی"
 ],
 "desc":"",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/70290165-1186-l__6437.jpg?width=900&quality=90&secret=WV1nRRRXprUDkG-lQ6pHQA",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1405/02/14",
 "time":"15:46",
@@ -1035,7 +1492,7 @@
 {
 "uid":"vte0d0w",
 "title":"آموزش مجازی در دانشگاه، قسمت چهارم، قبل و بعد از کلاس  آنلاین مجازی",
-"views":20,
+"views":24,
 "likes":0,
 "duration":261,
 "tags":[
@@ -1044,7 +1501,7 @@
 "آموزش آنلاین"
 ],
 "desc":"",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/70276249-4709-l__7916.jpg?width=900&quality=90&secret=3ukrdWzCxQX49jMxfypb9w",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1405/02/14",
 "time":"10:06",
@@ -1055,7 +1512,7 @@
 {
 "uid":"kfssqh4",
 "title":"آموزش مجازی در دانشگاه، قسمت سوم، مقدمه ای بر ادوبی کانکت",
-"views":11,
+"views":13,
 "likes":0,
 "duration":454,
 "tags":[
@@ -1064,7 +1521,7 @@
 "آموزش مجازی"
 ],
 "desc":"",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/70276225-8415-l__1263.jpg?width=900&quality=90&secret=XZwuxR3kla8NELi2KOKogw",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1405/02/14",
 "time":"10:06",
@@ -1075,7 +1532,7 @@
 {
 "uid":"ptm5r04",
 "title":"بر یار خراسانی من، جُمله سلام است",
-"views":59,
+"views":70,
 "likes":7,
 "duration":96,
 "tags":[
@@ -1084,7 +1541,7 @@
 "امین"
 ],
 "desc":"بسم الله الرحمن الرحیم\nهوالخلاق العلیم\n\nبه یاد شهید امین، حکیم و قائد امت، حضرت آیت الله العظمی سید علی حسینی خامنه ای در چهلمن روز فراق\n\nبر یار خراسانی من، جُمله سلام است\nاین مُلک رضا، جامِ جهانی خیام است\n\nفرماندهی کُلّ قوا، دستِ امین است\nبعد از سفرِ او، ظفرِ ما به نیام است\n\nایرانِ قوی، گشته قوی تر زِ دعایش\nزیرا که شراب خُمِ میخانه به کام است\n\nمردم همه مبعوث به شبها زِ خیابان\nیک جمع مقدس و پرچم که به بام است\n\nآرام نگردیم زِ فراق رُخِ ماهش\nدشمن شده ایم با صفِ سُفیانی که شام است\n\nماییم و غزلهای شکسته به هوایش\nاین حس دل انگیز که این چله پیام است\n\nای جمعِ جهانِ شده خوابیده بدانید\nما در پی خون خواهی خون پدریم، قصه تمام است!\n\nمسعود گوهری منش\nدانشیار گروه مهندسی مکانیک دانشگاه تربت حیدریه\nمنتقم خون سید علی خامنه ای\nو\n #جان_فدای_ایران\n\nبیستم فروردین ماه 1405، مشهد مقدس\nچهلمین روز شهادت قائد امت\nخراسان رضوی، مشهد مقدس",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/69434808-4161-l__7978.jpg?width=900&quality=90&secret=mGnRku0skHt-0v_nQRbE3A",
 "aparat_cat":"مذهبی",
 "jdate":"1405/01/20",
 "time":"16:54",
@@ -1095,7 +1552,7 @@
 {
 "uid":"mhbcs5u",
 "title":"رباتیک ترم دوم 1404-1405- مقدمه و سرفصل",
-"views":82,
+"views":106,
 "likes":0,
 "duration":3008,
 "tags":[
@@ -1104,7 +1561,7 @@
 "سرفصل"
 ],
 "desc":"",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/68904361-1629-l__8680.jpg?width=900&quality=90&secret=8XStxf7Mbcu3KuWEM_YAsQ",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1404/12/26",
 "time":"08:40",
@@ -1115,7 +1572,7 @@
 {
 "uid":"occs683",
 "title":"مدل سازی و شبیه سازی مکانیزم اسکات در نرم افزار SAM",
-"views":61,
+"views":65,
 "likes":0,
 "duration":274,
 "tags":[
@@ -1126,7 +1583,7 @@
 "مکانیزم"
 ],
 "desc":"",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/68904276-9455-l__1103.jpg?width=900&quality=90&secret=VYwhEX_Un1TVHLagtb8HdA",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1404/12/26",
 "time":"08:32",
@@ -1137,7 +1594,7 @@
 {
 "uid":"rdn66v0",
 "title":"پیاده سازی مفصل مرتبه پایین در نرم افزار SAM",
-"views":35,
+"views":38,
 "likes":1,
 "duration":2488,
 "tags":[
@@ -1147,7 +1604,7 @@
 "درجه آزادی"
 ],
 "desc":"",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/68904259-6748-l__1960.jpg?width=900&quality=90&secret=vPrQJiW91ENeq7_ZClP8Vg",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1404/12/26",
 "time":"08:29",
@@ -1158,7 +1615,7 @@
 {
 "uid":"mlcs677",
 "title":"مقدمه و سرفصل دینامیک ماشین، اسفند 1404",
-"views":117,
+"views":122,
 "likes":2,
 "duration":3915,
 "tags":[
@@ -1167,7 +1624,7 @@
 "ماشین چیست؟"
 ],
 "desc":"",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/68549073-3293-l__7609.jpg?width=900&quality=90&secret=ehAksIvC96zG8yFH4BIQdg",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1404/12/05",
 "time":"14:27",
@@ -1178,7 +1635,7 @@
 {
 "uid":"ioloc69",
 "title":"آموزش مجازی در دانشگاه، قسمت دوم: ثبت نام یک یا چند دانشجو در لیست یک کلاس",
-"views":88,
+"views":97,
 "likes":0,
 "duration":394,
 "tags":[
@@ -1187,7 +1644,7 @@
 "آموزش مجازی"
 ],
 "desc":"در این جلسه، نحوه اضافه‌کردن دانشجویانِ گروه‌های مختلف در یک گروه منظم و منسجم را یاد می‌گیریم. احتمالاً دیده‌اید که در یک کلاس ممکن است دانشجویانی از چند گروه ثبت‌نام‌شده در سامانه پویا وجود داشته باشند. در این آموزش، همهٔ آن‌ها را یک‌جا می‌بینید و می‌توانید آموزش را به‌صورت منسجم برای همه برگزار کنید.",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/68430287-5027-l__6312.jpg?width=900&quality=90&secret=s7roBaM0mlahP_G73Lru7A",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1404/11/27",
 "time":"13:37",
@@ -1198,7 +1655,7 @@
 {
 "uid":"yfp4j8e",
 "title":"آموزش مجازی در دانشگاه- قسمت اول",
-"views":218,
+"views":259,
 "likes":0,
 "duration":2110,
 "tags":[
@@ -1209,7 +1666,7 @@
 "دانشگاه تربت حیدریه"
 ],
 "desc":"در این جلسه با سامانه LMS دانشگاه تربت حیدریه آشنا می‌شویم و مهم‌ترین امکانات آن را مرور می‌کنیم.\nدر این ویدیو نحوه ایجاد کلاس آنلاین، طراحی محتوای اولیه درس و همچنین انتقال و بازیابی محتوای کلاس‌های گذشته در ترم جدید به‌صورت گام‌به‌گام آموزش داده شده است.\nاگر قصد دارید تدریس مجازی خود را سریع، منظم و حرفه‌ای آغاز کنید، این جلسه نقطه شروع شماست",
-"poster":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/68423553-1111-l__3966.jpg?width=900&quality=90&secret=32PfYY8JJe_E6TNJlU2M2w",
 "aparat_cat":"تحصیلات و یادگیری",
 "jdate":"1404/11/26",
 "time":"21:47",
