@@ -2,7 +2,7 @@
 # همگام‌سازی آکادمی ویدیویی با آپارات (لینوکس/مک) — Powered by Dr. Masoud Goharimanesh
 set -e
 cd "$(dirname "$0")"
-git pull --rebase
+git pull --rebase --autostash
 python3 scripts/aparat_sync.py sync
 if git diff --quiet -- data/videos.json; then echo "No new videos."; exit 0; fi
 git add data/videos.json

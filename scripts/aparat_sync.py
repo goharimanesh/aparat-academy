@@ -9,6 +9,8 @@ Powered by Dr. Masoud Goharimanesh
   python scripts/aparat_sync.py sync          # دریافت ویدیوهای جدید و به‌روزرسانی بازدیدها از آپارات
   python scripts/aparat_sync.py sync --full   # پیمایش کامل همهٔ صفحه‌های کانال (برای پر کردن پوسترها)
   python scripts/aparat_sync.py classify      # دسته‌بندی دوباره پس از ویرایش data/categories.json
+  python scripts/aparat_sync.py probe         # بررسی اینکه کدام منبع آپارات الان پاسخ می‌دهد
+  python scripts/aparat_sync.py add https://www.aparat.com/v/XXXX [--title "عنوان"]   # افزودن دستی با لینک
 
 فقط به کتابخانه‌های استاندارد پایتون نیاز دارد (برای import-xlsx: openpyxl).
 """
@@ -346,17 +348,60 @@ def cmd_import_xlsx(path):
 
 
 # ------------------------------------------------------------------ sync from Aparat
-def http_json(url, tries=3):
+# Aparat has changed its public API more than once, so the sync does not depend on
+# one endpoint: it tries several sources in order and uses the first that answers.
+# Run  `python scripts/aparat_sync.py probe`  to see which sources work right now.
+
+HEADERS = {
+    "User-Agent": UA,
+    "Accept": "application/json, text/html;q=0.9, */*;q=0.8",
+    "Accept-Language": "fa-IR,fa;q=0.9,en;q=0.8",
+    "Referer": "https://www.aparat.com/",
+}
+UID_RE = r"[A-Za-z0-9]{3,12}"
+
+
+def http_get(url, tries=2):
     last = None
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json, text/plain, */*", "Accept-Language": "fa-IR,fa;q=0.9,en;q=0.8", "Referer": "https://www.aparat.com/"})
+            req = urllib.request.Request(url, headers=HEADERS)
             with urllib.request.urlopen(req, timeout=30) as r:
-                return json.loads(r.read().decode("utf-8", "replace"))
+                return r.status, r.headers.get("Content-Type", ""), r.read().decode("utf-8", "replace")
+        except urllib.error.HTTPError as e:
+            last = f"HTTP {e.code} {e.reason}"
+            if e.code in (400, 401, 403, 404, 410):
+                break
         except Exception as e:  # noqa
-            last = e
-            time.sleep(2 * (i + 1))
-    raise RuntimeError(f"fetch failed: {url} → {last}")
+            last = str(e)
+        time.sleep(1.5 * (i + 1))
+    raise RuntimeError(last)
+
+
+def try_json(text):
+    try:
+        return json.loads(text)
+    except Exception:
+        return None
+
+
+def walk(o):
+    if isinstance(o, dict):
+        yield o
+        for v in o.values():
+            yield from walk(v)
+    elif isinstance(o, list):
+        for v in o:
+            yield from walk(v)
+
+
+def deep_get(o, *keys, default=None):
+    for d in walk(o):
+        for k in keys:
+            v = d.get(k)
+            if v not in (None, "", [], {}):
+                return v
+    return default
 
 
 def first(d, *keys, default=None):
@@ -373,34 +418,194 @@ def parse_tags(t):
         return [x.strip() for x in re.split(r"[,،]", t) if x.strip()]
     out = []
     for x in t:
-        out.append(x.get("name") or x.get("title") if isinstance(x, dict) else str(x))
+        out.append((x.get("name") or x.get("title")) if isinstance(x, dict) else str(x))
     return [x for x in out if x]
 
 
-def list_channel(full=False, known=()):
-    url = f"https://www.aparat.com/etc/api/videoByUser/username/{USERNAME}/perpage/50"
+def parse_duration(v):
+    if v in (None, ""):
+        return 0
+    if isinstance(v, (int, float)):
+        return int(v)
+    v = str(v).strip()
+    if v.isdigit():
+        return int(v)
+    m = re.fullmatch(r"P(?:T)?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d+)?)S)?", v)
+    if m:
+        h, mi, se = m.groups()
+        return int(h or 0) * 3600 + int(mi or 0) * 60 + int(float(se or 0))
+    if re.fullmatch(r"\d+:\d{2}(:\d{2})?", v):
+        parts = [int(x) for x in v.split(":")]
+        return sum(p * 60 ** i for i, p in enumerate(reversed(parts)))
+    return 0
+
+
+def items_from_json(data):
+    """Find video-like objects anywhere in a JSON document (old API, JSON:API, …)."""
+    out, seen = [], set()
+    for d in walk(data):
+        uid = first(d, "uid", "videohash", "hash")
+        title = first(d, "title", "name")
+        owner = first(d, "username", "sender_username", "user_name")
+        if isinstance(owner, str) and owner.lower() != USERNAME.lower():
+            continue  # a video from another channel (e.g. recommendations)
+        if isinstance(uid, str) and re.fullmatch(UID_RE, uid) and isinstance(title, str) and uid not in seen:
+            seen.add(uid)
+            out.append({
+                "uid": uid, "title": title,
+                "views": first(d, "visit_cnt", "view_cnt", "visit_count", "visit"),
+                "poster": first(d, "big_poster", "cover", "poster", "small_poster", "thumbnail"),
+                "duration": first(d, "duration"),
+                "date": first(d, "create_date", "date_exact", "publish_date", "sdate_rss"),
+            })
+    return out
+
+
+def uids_from_text(text):
+    out, seen = [], set()
+    for u in re.findall(r"aparat\.com/v/(" + UID_RE + r")\b|[\"'(]/v/(" + UID_RE + r")\b", text):
+        u = u[0] or u[1]
+        if u not in seen:
+            seen.add(u)
+            out.append({"uid": u})
+    return out
+
+
+def next_page(data):
+    if not isinstance(data, dict):
+        return None
+    nxt = deep_get(data, "pagingForward") or ((data.get("links") or {}).get("next") if isinstance(data.get("links"), dict) else None)
+    return nxt if isinstance(nxt, str) and nxt.startswith("http") else None
+
+
+def list_sources():
+    u = USERNAME
+    return [
+        ("legacy-api", f"https://www.aparat.com/etc/api/videoByUser/username/{u}/perpage/50"),
+        ("api-v1-user", f"https://www.aparat.com/api/fa/v1/user/video/list/username/{u}"),
+        ("api-v1-profile", f"https://www.aparat.com/api/fa/v1/user/user/information/username/{u}"),
+        ("rss", f"https://www.aparat.com/rss/{u}"),
+        ("channel-videos-page", f"https://www.aparat.com/{u}/videos"),
+        ("channel-page", f"https://www.aparat.com/{u}"),
+    ]
+
+
+def fetch_source(url, full=False, known=(), max_pages=60):
+    """Return list of item dicts from one source (follows pagination for JSON)."""
     items, pages = [], 0
-    while url and pages < 60:
-        data = http_json(url)
-        batch = first(data, "videobyuser", "videoByUser", default=[]) or []
+    while url and pages < max_pages:
+        _, _, text = http_get(url)
+        data = try_json(text)
+        batch = items_from_json(data) if data is not None else []
+        if not batch:
+            batch = uids_from_text(text)
         items += batch
         pages += 1
-        if not full and batch and all(b.get("uid") in known for b in batch):
+        if not full and batch and all(b["uid"] in known for b in batch):
             break
-        ui = data.get("ui") or {}
-        nxt = ui.get("pagingForward") or ""
-        url = nxt if nxt and nxt.startswith("http") else None
+        url = next_page(data)
         time.sleep(0.8)
     return items
 
 
+def list_channel(full=False, known=()):
+    errors = []
+    for name, url in list_sources():
+        try:
+            items = fetch_source(url, full, known)
+        except Exception as e:
+            errors.append(f"{name}: {e}")
+            continue
+        if items:
+            print(f"  · source: {name} ({len(items)} items)")
+            return items
+        errors.append(f"{name}: answered, but no videos found in it")
+    raise RuntimeError("no source worked →\n    " + "\n    ".join(errors))
+
+
+def details_from_html(text):
+    det = {}
+    for m in re.finditer(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', text, re.S | re.I):
+        j = try_json(m.group(1).strip())
+        for d in walk(j):
+            if str(d.get("@type", "")).lower() == "videoobject":
+                det.update({
+                    "title": d.get("name"), "description": d.get("description"),
+                    "duration": d.get("duration"), "create_date": d.get("uploadDate"),
+                    "big_poster": (d.get("thumbnailUrl")[0] if isinstance(d.get("thumbnailUrl"), list) else d.get("thumbnailUrl")),
+                    "tags": d.get("keywords"),
+                    "visit_cnt": deep_get(d, "userInteractionCount", "interactionCount"),
+                })
+    meta = dict(re.findall(r'<meta[^>]+(?:property|name)="([^"]+)"[^>]+content="([^"]*)"', text))
+    det.setdefault("title", meta.get("og:title"))
+    if not det.get("title"):
+        det["title"] = meta.get("og:title")
+    det["description"] = det.get("description") or meta.get("og:description") or meta.get("description")
+    det["big_poster"] = det.get("big_poster") or meta.get("og:image")
+    det["duration"] = det.get("duration") or meta.get("video:duration") or meta.get("og:video:duration")
+    det["create_date"] = det.get("create_date") or meta.get("video:release_date") or meta.get("og:video:release_date")
+    tags = re.findall(r'<meta[^>]+property="(?:og:)?video:tag"[^>]+content="([^"]*)"', text)
+    if tags and not det.get("tags"):
+        det["tags"] = tags
+    return {k: html.unescape(v) if isinstance(v, str) else v for k, v in det.items() if v not in (None, "")}
+
+
+def detail_sources(uid):
+    return [
+        ("legacy-api", f"https://www.aparat.com/etc/api/video/videohash/{uid}"),
+        ("api-v1-show", f"https://www.aparat.com/api/fa/v1/video/video/show/videohash/{uid}?pr=1&mf=1"),
+        ("video-page", f"https://www.aparat.com/v/{uid}"),
+    ]
+
+
+_DETAIL_OK = []
+
+
 def video_details(uid):
-    try:
-        d = http_json(f"https://www.aparat.com/etc/api/video/videohash/{uid}")
-        return d.get("video") or {}
-    except Exception as e:
-        print("  ! details failed", uid, e)
-        return {}
+    srcs = detail_sources(uid)
+    if _DETAIL_OK:
+        srcs.sort(key=lambda s: s[0] != _DETAIL_OK[0])
+    for name, url in srcs:
+        try:
+            _, _, text = http_get(url)
+        except Exception:
+            continue
+        data = try_json(text)
+        if data is not None:
+            d = None
+            for x in walk(data):
+                if first(x, "title", "name") and (first(x, "uid", "videohash", "hash") in (uid, None)):
+                    d = x
+                    break
+            if d:
+                d = dict(d)
+                d.setdefault("tags", deep_get(data, "tags", default=[]))
+                if not _DETAIL_OK:
+                    _DETAIL_OK.append(name)
+                return d
+        else:
+            d = details_from_html(text)
+            if d.get("title"):
+                if not _DETAIL_OK:
+                    _DETAIL_OK.append(name)
+                return d
+    print("  ! details not available for", uid)
+    return {}
+
+
+def video_from(uid, it, det, title=None):
+    return make_video(
+        uid=uid,
+        title=title or first(det, "title", "name", default=it.get("title", "")) or uid,
+        views=it.get("views") or first(det, "visit_cnt", "view_cnt", "visit_count", default=0),
+        likes=first(det, "like_cnt", "like_count", default=0),
+        duration=parse_duration(it.get("duration") or first(det, "duration", default=0)),
+        date=first(det, "create_date", "date_exact", "publish_date", "uploadDate", default=it.get("date")),
+        tags=parse_tags(first(det, "tags", default=[])),
+        desc=first(det, "description", default=""),
+        poster=it.get("poster") or first(det, "big_poster", "cover", "small_poster", default=""),
+        aparat_cat=first(det, "cat_name", "category_name", default=""),
+    )
 
 
 def cmd_sync(full=False):
@@ -410,34 +615,20 @@ def cmd_sync(full=False):
         listing = list_channel(full=full, known=set(by_uid))
     except Exception as e:
         print("✗ Aparat is not reachable:", e)
+        print("  Tip: run `python scripts/aparat_sync.py probe` and check which source works,")
+        print("  or add new videos by link: `python scripts/aparat_sync.py add https://www.aparat.com/v/XXXX`")
         sys.exit(0 if os.environ.get("CI") else 1)
     new = 0
     for it in listing:
-        uid = it.get("uid")
-        if not uid:
-            continue
-        poster = first(it, "big_poster", "small_poster", default="")
-        views = first(it, "visit_cnt", "view_cnt", default=None)
+        uid = it["uid"]
         if uid in by_uid:
             v = by_uid[uid]
-            if views is not None:
-                v["views"] = max(int(views), v.get("views", 0))
-            if poster and not v.get("poster"):
-                v["poster"] = poster
+            if it.get("views") not in (None, ""):
+                v["views"] = max(int(it["views"]), v.get("views", 0))
+            if it.get("poster") and not v.get("poster"):
+                v["poster"] = it["poster"]
             continue
-        det = video_details(uid)
-        v = make_video(
-            uid=uid,
-            title=first(det, "title", default=it.get("title", "")),
-            views=views or first(det, "visit_cnt", default=0),
-            likes=first(det, "like_cnt", default=0),
-            duration=first(it, "duration", default=first(det, "duration", default=0)),
-            date=first(det, "create_date", "date_exact", "sdate_rss", default=first(it, "create_date", "date_exact", default=None)),
-            tags=parse_tags(first(det, "tags", default=[])),
-            desc=first(det, "description", default=""),
-            poster=poster or first(det, "big_poster", "small_poster", default=""),
-            aparat_cat=first(det, "cat_name", default=""),
-        )
+        v = video_from(uid, it, video_details(uid))
         videos.append(v)
         by_uid[uid] = v
         new += 1
@@ -445,6 +636,58 @@ def cmd_sync(full=False):
         time.sleep(0.5)
     print(f"✓ fetched {len(listing)} items from Aparat, {new} new")
     finalize(videos)
+
+
+def cmd_add(args):
+    """add <link|uid> [<link|uid> ...] [--title "..."]  — add videos by link"""
+    title = None
+    if "--title" in args:
+        i = args.index("--title")
+        title = args[i + 1] if i + 1 < len(args) else None
+        args = args[:i] + args[i + 2:]
+    videos = load_videos()
+    by_uid = {v["uid"]: v for v in videos}
+    for a in args:
+        m = re.search(r"/v/(" + UID_RE + r")", a)
+        uid = m.group(1) if m else a.strip()
+        if not re.fullmatch(UID_RE, uid):
+            print("  ! not a valid Aparat link:", a)
+            continue
+        if uid in by_uid:
+            print("  = already in the site:", by_uid[uid]["title"])
+            continue
+        det = video_details(uid)
+        if not det and not title:
+            print(f"  ! could not read video {uid} from Aparat. Add it with a title:")
+            print(f'    python scripts/aparat_sync.py add {uid} --title "عنوان ویدیو"')
+            continue
+        v = video_from(uid, {}, det, title)
+        videos.append(v)
+        by_uid[uid] = v
+        print("  + added:", v["title"], "→", v["jdate"])
+    finalize(videos)
+
+
+def cmd_probe():
+    vids = load_videos()
+    sample = vids[0]["uid"] if vids else "vkcew3q"
+    print(f"Probing Aparat sources for channel '{USERNAME}' (sample video {sample})\n")
+    rows = [("LIST", n, u) for n, u in list_sources()] + [("VIDEO", n, u) for n, u in detail_sources(sample)]
+    for kind, name, url in rows:
+        try:
+            st, ct, text = http_get(url, tries=1)
+            data = try_json(text)
+            n = len(items_from_json(data)) if data is not None else 0
+            n2 = len(uids_from_text(text))
+            extra = ""
+            if kind == "VIDEO":
+                d = details_from_html(text) if data is None else {"title": deep_get(data, "title")}
+                extra = f" title={str(d.get('title'))[:50]!r}"
+            print(f"✓ {kind:5} {name:20} {st} {ct.split(';')[0]:18} {len(text):>8}B  json-items={n} links={n2}{extra}")
+        except Exception as e:
+            print(f"✗ {kind:5} {name:20} {e}")
+        time.sleep(0.5)
+    print("\nSend this output if sync still fails.")
 
 
 def main(argv):
@@ -458,6 +701,10 @@ def main(argv):
         cmd_sync(full="--full" in argv)
     elif cmd == "classify":
         finalize(load_videos())
+    elif cmd == "add":
+        cmd_add(argv[2:])
+    elif cmd == "probe":
+        cmd_probe()
     else:
         print("unknown command", cmd)
         print(__doc__)

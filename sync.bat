@@ -12,7 +12,7 @@ where python >nul 2>&1 || set PY=py
 
 echo.
 echo [1/4] Getting latest version from GitHub (git pull)...
-git pull --rebase
+git pull --rebase --autostash
 if errorlevel 1 goto :err
 
 echo.
