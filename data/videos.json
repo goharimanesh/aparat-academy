@@ -1,8 +1,8 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-10T19:46:35Z",
-"count":775,
+"generated":"2026-11-10T23:33:09Z",
+"count":777,
 "series":[
 {
 "id":"endnote",
@@ -617,7 +617,7 @@
 "mkx2b85",
 "rlv920k"
 ],
-"views":1795,
+"views":1796,
 "duration":22836
 },
 {
@@ -643,7 +643,7 @@
 {
 "id":"measure",
 "title":"سیستم‌های اندازه‌گیری و سنسورها",
-"count":15,
+"count":16,
 "cat":"sensing",
 "uids":[
 "e52l3c9",
@@ -660,10 +660,11 @@
 "szrz90g",
 "ptrh2k0",
 "itb594v",
-"nsdx491"
+"nsdx491",
+"susk356"
 ],
 "views":1729,
-"duration":20450
+"duration":22181
 },
 {
 "id":"fuzzy-rl-vehicle",
@@ -919,16 +920,17 @@
 {
 "id":"mech1",
 "title":"مکاترونیک ۱",
-"count":4,
+"count":5,
 "cat":"sensing",
 "uids":[
 "qfuy503",
 "uaomay4",
 "mwv8y17",
-"pulb666"
+"pulb666",
+"tef53n4"
 ],
 "views":165,
-"duration":3982
+"duration":4862
 },
 {
 "id":"trms",
@@ -946,9 +948,41 @@
 ],
 "videos":[
 {
+"uid":"tef53n4",
+"title":"پادکست جلسه سوم مکاترونیک 1: مفاهیک کلیدی سنسورها",
+"views":0,
+"likes":0,
+"duration":880,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74163112-7480-l__2418.jpg?width=900&quality=90&secret=-vpHPQ3I8FE3H-7HFtBDIw",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/20",
+"time":"02:56",
+"ts":140508200256,
+"cat":"sensing",
+"series":"mech1"
+},
+{
+"uid":"susk356",
+"title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 9: اندازه گیری فشار",
+"views":0,
+"likes":0,
+"duration":1731,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74163102-8705-l__9034.jpg?width=900&quality=90&secret=GhN5CV9H4VkYgt_dhb8pUQ",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/20",
+"time":"02:52",
+"ts":140508200252,
+"cat":"sensing",
+"series":"measure"
+},
+{
 "uid":"rlv920k",
 "title":"پادکست جلسه دوم درس ریاضی مهندسی پیشرفته: مقدمه ای بر پردازش سیگنال",
-"views":1,
+"views":2,
 "likes":0,
 "duration":910,
 "tags":[],
