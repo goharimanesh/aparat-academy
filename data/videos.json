@@ -1,7 +1,7 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-10T07:24:17Z",
+"generated":"2026-11-10T19:46:35Z",
 "count":775,
 "series":[
 {
@@ -617,7 +617,7 @@
 "mkx2b85",
 "rlv920k"
 ],
-"views":1794,
+"views":1795,
 "duration":22836
 },
 {
@@ -948,7 +948,7 @@
 {
 "uid":"rlv920k",
 "title":"پادکست جلسه دوم درس ریاضی مهندسی پیشرفته: مقدمه ای بر پردازش سیگنال",
-"views":0,
+"views":1,
 "likes":0,
 "duration":910,
 "tags":[],
