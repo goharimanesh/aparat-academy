@@ -1,8 +1,8 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-10T23:33:09Z",
-"count":777,
+"generated":"2026-11-11T00:17:29Z",
+"count":778,
 "series":[
 {
 "id":"endnote",
@@ -599,7 +599,7 @@
 {
 "id":"aem-1405",
 "title":"ریاضی مهندسی پیشرفته (کارشناسی ارشد)",
-"count":14,
+"count":15,
 "cat":"math",
 "uids":[
 "xznn8y3",
@@ -615,10 +615,11 @@
 "bzxix31",
 "uih1j23",
 "mkx2b85",
-"rlv920k"
+"rlv920k",
+"hna2566"
 ],
 "views":1796,
-"duration":22836
+"duration":27158
 },
 {
 "id":"python",
@@ -663,7 +664,7 @@
 "nsdx491",
 "susk356"
 ],
-"views":1729,
+"views":1730,
 "duration":22181
 },
 {
@@ -948,6 +949,24 @@
 ],
 "videos":[
 {
+"uid":"hna2566",
+"title":"پادکست جلسه سوم درس ریاضی مهندسی پیشرفته: مفاهیم کلیدی جبر خطی",
+"views":0,
+"likes":0,
+"duration":4322,
+"tags":[
+"چبر خطی"
+],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74163225-1656-l__8689.jpg?width=900&quality=90&secret=lFOt6fjECaphVcTHO7zfIA",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/20",
+"time":"03:42",
+"ts":140508200342,
+"cat":"math",
+"series":"aem-1405"
+},
+{
 "uid":"tef53n4",
 "title":"پادکست جلسه سوم مکاترونیک 1: مفاهیک کلیدی سنسورها",
 "views":0,
@@ -966,7 +985,7 @@
 {
 "uid":"susk356",
 "title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 9: اندازه گیری فشار",
-"views":0,
+"views":1,
 "likes":0,
 "duration":1731,
 "tags":[],
