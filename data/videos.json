@@ -1,7 +1,7 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-12T19:58:11Z",
+"generated":"2026-11-13T06:51:09Z",
 "count":778,
 "series":[
 {
@@ -664,7 +664,7 @@
 "nsdx491",
 "susk356"
 ],
-"views":1734,
+"views":1735,
 "duration":22181
 },
 {
@@ -1375,7 +1375,7 @@
 {
 "uid":"haup1r5",
 "title":"سیستم‌های اندازه‌گیری و کنترل | جلسه ۴: دقت و صحت— چقدر می‌توان به اندازه‌گیری اعتماد کرد؟",
-"views":9,
+"views":10,
 "likes":0,
 "duration":1441,
 "tags":[],
