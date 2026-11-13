@@ -1,7 +1,7 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-13T06:51:09Z",
+"generated":"2026-11-13T19:45:48Z",
 "count":778,
 "series":[
 {
@@ -664,7 +664,7 @@
 "nsdx491",
 "susk356"
 ],
-"views":1735,
+"views":1736,
 "duration":22181
 },
 {
@@ -930,7 +930,7 @@
 "pulb666",
 "tef53n4"
 ],
-"views":169,
+"views":170,
 "duration":4862
 },
 {
@@ -1017,7 +1017,7 @@
 {
 "uid":"pulb666",
 "title":"پادکست جلسه دوم مکاترونیک 1: اصول سامانه های الکترومکانیکی",
-"views":1,
+"views":2,
 "likes":0,
 "duration":806,
 "tags":[],
@@ -1319,7 +1319,7 @@
 {
 "uid":"dnyn8tn",
 "title":"جلسه دوم هوش مصنوعی: آینده پژوهی",
-"views":24,
+"views":25,
 "likes":0,
 "duration":1148,
 "tags":[
@@ -1391,7 +1391,7 @@
 {
 "uid":"ybkp2e2",
 "title":"سیستم‌های اندازه‌گیری و کنترل | جلسه ۳: دستگاه یکاهای SI — زبان مشترک مهندسان جهان",
-"views":12,
+"views":13,
 "likes":0,
 "duration":958,
 "tags":[
