@@ -1,8 +1,8 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-15T18:54:07Z",
-"count":782,
+"generated":"2026-11-15T21:27:44Z",
+"count":785,
 "series":[
 {
 "id":"endnote",
@@ -601,7 +601,7 @@
 {
 "id":"aem-1405",
 "title":"ریاضی مهندسی پیشرفته (کارشناسی ارشد)",
-"count":15,
+"count":16,
 "cat":"math",
 "uids":[
 "xznn8y3",
@@ -618,10 +618,11 @@
 "uih1j23",
 "mkx2b85",
 "rlv920k",
-"hna2566"
+"hna2566",
+"oeb53l4"
 ],
-"views":1814,
-"duration":27158
+"views":1815,
+"duration":28140
 },
 {
 "id":"python",
@@ -666,7 +667,7 @@
 "nsdx491",
 "susk356"
 ],
-"views":1750,
+"views":1751,
 "duration":22181
 },
 {
@@ -923,17 +924,18 @@
 {
 "id":"mech1",
 "title":"مکاترونیک ۱",
-"count":5,
+"count":6,
 "cat":"sensing",
 "uids":[
 "qfuy503",
 "uaomay4",
 "mwv8y17",
 "pulb666",
-"tef53n4"
+"tef53n4",
+"jzvouam"
 ],
-"views":177,
-"duration":4862
+"views":178,
+"duration":6024
 },
 {
 "id":"trms",
@@ -950,6 +952,54 @@
 }
 ],
 "videos":[
+{
+"uid":"oeb53l4",
+"title":"پادکست جلسه چهارم ریاضی مهندسی پیشرفته: مقادیر و یژه و SVD",
+"views":0,
+"likes":0,
+"duration":982,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74240934-6602-l__2308.jpg?width=900&quality=90&secret=vE9Q1TtuW8KcEFl21_hzQw",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/25",
+"time":"00:42",
+"ts":140508250042,
+"cat":"math",
+"series":"aem-1405"
+},
+{
+"uid":"jzvouam",
+"title":"پادکست جلسه چهارم درس مکاترونیک 1: سنسورها در مکاترونیک",
+"views":0,
+"likes":0,
+"duration":1162,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74240920-8221-l__1568.jpg?width=900&quality=90&secret=K2aIkQbDWgu4AGfGuAI4Nw",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/25",
+"time":"00:39",
+"ts":140508250039,
+"cat":"sensing",
+"series":"mech1"
+},
+{
+"uid":"sepys32",
+"title":"پادکست بخش اول جلسه نهم هوش مصنوعی: ورود به فاز سوم و بهره گیری از ابزارهای فوق تخصصی در مهندسی",
+"views":0,
+"likes":0,
+"duration":824,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74240848-1530-l__9742.jpg?width=900&quality=90&secret=rqp9vTbbLPcW8CNlIEAG1w",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/25",
+"time":"00:28",
+"ts":140508250028,
+"cat":"ai",
+"series":null
+},
 {
 "uid":"pfwrkqc",
 "title":"کار با ADAM-AI: شروع دنیای هوش مصنوعی نرم افزارهای حرفه ای طراحی مهندسی",
@@ -1019,7 +1069,7 @@
 {
 "uid":"hna2566",
 "title":"پادکست جلسه سوم درس ریاضی مهندسی پیشرفته: مفاهیم کلیدی جبر خطی",
-"views":12,
+"views":13,
 "likes":0,
 "duration":4322,
 "tags":[
@@ -1037,7 +1087,7 @@
 {
 "uid":"tef53n4",
 "title":"پادکست جلسه سوم مکاترونیک 1: مفاهیک کلیدی سنسورها",
-"views":9,
+"views":10,
 "likes":0,
 "duration":880,
 "tags":[],
@@ -1053,7 +1103,7 @@
 {
 "uid":"susk356",
 "title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 9: اندازه گیری فشار",
-"views":6,
+"views":7,
 "likes":0,
 "duration":1731,
 "tags":[],
