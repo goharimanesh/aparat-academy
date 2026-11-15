@@ -1,8 +1,8 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-15T04:23:34Z",
-"count":781,
+"generated":"2026-11-15T06:39:47Z",
+"count":782,
 "series":[
 {
 "id":"endnote",
@@ -448,7 +448,7 @@
 "mjm101m",
 "nefr234"
 ],
-"views":3247,
+"views":3248,
 "duration":16448
 },
 {
@@ -579,7 +579,7 @@
 "foz14du",
 "kayc4u9"
 ],
-"views":2120,
+"views":2122,
 "duration":6630
 },
 {
@@ -620,7 +620,7 @@
 "rlv920k",
 "hna2566"
 ],
-"views":1807,
+"views":1812,
 "duration":27158
 },
 {
@@ -932,7 +932,7 @@
 "pulb666",
 "tef53n4"
 ],
-"views":172,
+"views":177,
 "duration":4862
 },
 {
@@ -950,6 +950,24 @@
 }
 ],
 "videos":[
+{
+"uid":"pfwrkqc",
+"title":"کار با ADAM-AI: شروع دنیای هوش مصنوعی نرم افزارهای حرفه ای طراحی مهندسی",
+"views":0,
+"likes":0,
+"duration":936,
+"tags":[
+"َِADAM"
+],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74228644-9653-l__4158.jpg?width=900&quality=90&secret=I8nEiZ9xdO1rz04--_fCAQ",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/24",
+"time":"09:57",
+"ts":140508240957,
+"cat":"ai",
+"series":null
+},
 {
 "uid":"dlyzo07",
 "title":"پادکست جلسه هشتم رباتیک: کنترل ربات- بخش اول",
@@ -969,7 +987,7 @@
 {
 "uid":"kayc4u9",
 "title":"پادکست جلسه هفتم رباتیک: سینماتیک معکوس و رباتهای همکار",
-"views":0,
+"views":2,
 "likes":0,
 "duration":752,
 "tags":[],
@@ -985,7 +1003,7 @@
 {
 "uid":"nefr234",
 "title":"پادکست بخش سوم جلسه هشتم هوش مصنوعی- بنچ مارک گل زنبق و اجرای سه الگوریتم در کولاب",
-"views":0,
+"views":1,
 "likes":0,
 "duration":1168,
 "tags":[],
@@ -1001,7 +1019,7 @@
 {
 "uid":"hna2566",
 "title":"پادکست جلسه سوم درس ریاضی مهندسی پیشرفته: مفاهیم کلیدی جبر خطی",
-"views":7,
+"views":10,
 "likes":0,
 "duration":4322,
 "tags":[
@@ -1019,7 +1037,7 @@
 {
 "uid":"tef53n4",
 "title":"پادکست جلسه سوم مکاترونیک 1: مفاهیک کلیدی سنسورها",
-"views":6,
+"views":9,
 "likes":0,
 "duration":880,
 "tags":[],
@@ -1051,7 +1069,7 @@
 {
 "uid":"rlv920k",
 "title":"پادکست جلسه دوم درس ریاضی مهندسی پیشرفته: مقدمه ای بر پردازش سیگنال",
-"views":6,
+"views":7,
 "likes":0,
 "duration":910,
 "tags":[],
@@ -1067,7 +1085,7 @@
 {
 "uid":"pulb666",
 "title":"پادکست جلسه دوم مکاترونیک 1: اصول سامانه های الکترومکانیکی",
-"views":2,
+"views":4,
 "likes":0,
 "duration":806,
 "tags":[],
@@ -1167,7 +1185,7 @@
 {
 "uid":"rpx2mue",
 "title":"پادکست جلسه اول مکاترونیک1: نقشه راه",
-"views":9,
+"views":10,
 "likes":1,
 "duration":895,
 "tags":[],
@@ -1183,7 +1201,7 @@
 {
 "uid":"mkx2b85",
 "title":"پادکست جلسه اول درس ریاضی مهندسی پیشرفته: نقشه راه",
-"views":25,
+"views":26,
 "likes":0,
 "duration":1276,
 "tags":[],
