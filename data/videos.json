@@ -1,8 +1,8 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-14T22:28:42Z",
-"count":778,
+"generated":"2026-11-15T04:23:34Z",
+"count":781,
 "series":[
 {
 "id":"endnote",
@@ -430,7 +430,7 @@
 {
 "id":"robots-intro",
 "title":"آشنایی با ربات‌ها و نرم‌افزارهای رباتیک",
-"count":13,
+"count":14,
 "cat":"robotics",
 "uids":[
 "s4925nb",
@@ -445,10 +445,11 @@
 "q796033",
 "ctc5234",
 "utdj66u",
-"mjm101m"
+"mjm101m",
+"nefr234"
 ],
 "views":3247,
-"duration":15280
+"duration":16448
 },
 {
 "id":"vib-lab",
@@ -484,7 +485,7 @@
 "eai89i8",
 "eon648d"
 ],
-"views":2830,
+"views":2831,
 "duration":13493
 },
 {
@@ -568,17 +569,18 @@
 {
 "id":"ik",
 "title":"سینماتیک مستقیم و معکوس",
-"count":5,
+"count":6,
 "cat":"robotics",
 "uids":[
 "t06i090",
 "ET9hI",
 "f98q4iv",
 "xmc5ex9",
-"foz14du"
+"foz14du",
+"kayc4u9"
 ],
 "views":2120,
-"duration":5878
+"duration":6630
 },
 {
 "id":"solid-motion",
@@ -618,7 +620,7 @@
 "rlv920k",
 "hna2566"
 ],
-"views":1803,
+"views":1807,
 "duration":27158
 },
 {
@@ -664,7 +666,7 @@
 "nsdx491",
 "susk356"
 ],
-"views":1746,
+"views":1747,
 "duration":22181
 },
 {
@@ -930,7 +932,7 @@
 "pulb666",
 "tef53n4"
 ],
-"views":170,
+"views":172,
 "duration":4862
 },
 {
@@ -949,9 +951,57 @@
 ],
 "videos":[
 {
+"uid":"dlyzo07",
+"title":"پادکست جلسه هشتم رباتیک: کنترل ربات- بخش اول",
+"views":0,
+"likes":0,
+"duration":730,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74227080-7551-l__3718.jpg?width=900&quality=90&secret=6LAF8bfxoe3Mt8xbaCfzYg",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/24",
+"time":"07:05",
+"ts":140508240705,
+"cat":"robotics",
+"series":null
+},
+{
+"uid":"kayc4u9",
+"title":"پادکست جلسه هفتم رباتیک: سینماتیک معکوس و رباتهای همکار",
+"views":0,
+"likes":0,
+"duration":752,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74226983-2881-l__2532.jpg?width=900&quality=90&secret=URXbXxMh7S4H9UvBnlbFbw",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/24",
+"time":"06:46",
+"ts":140508240646,
+"cat":"robotics",
+"series":"ik"
+},
+{
+"uid":"nefr234",
+"title":"پادکست بخش سوم جلسه هشتم هوش مصنوعی- بنچ مارک گل زنبق و اجرای سه الگوریتم در کولاب",
+"views":0,
+"likes":0,
+"duration":1168,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74226934-3162-l__7060.jpg?width=900&quality=90&secret=70BzzvIE3t8fCjCBus03nA",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/24",
+"time":"06:35",
+"ts":140508240635,
+"cat":"ai",
+"series":"robots-intro"
+},
+{
 "uid":"hna2566",
 "title":"پادکست جلسه سوم درس ریاضی مهندسی پیشرفته: مفاهیم کلیدی جبر خطی",
-"views":5,
+"views":7,
 "likes":0,
 "duration":4322,
 "tags":[
@@ -969,7 +1019,7 @@
 {
 "uid":"tef53n4",
 "title":"پادکست جلسه سوم مکاترونیک 1: مفاهیک کلیدی سنسورها",
-"views":4,
+"views":6,
 "likes":0,
 "duration":880,
 "tags":[],
@@ -1001,7 +1051,7 @@
 {
 "uid":"rlv920k",
 "title":"پادکست جلسه دوم درس ریاضی مهندسی پیشرفته: مقدمه ای بر پردازش سیگنال",
-"views":4,
+"views":6,
 "likes":0,
 "duration":910,
 "tags":[],
@@ -1067,7 +1117,7 @@
 {
 "uid":"trfaad8",
 "title":"پادکست بخش دوم جلسه هشتم هوش مصنوعی- کد نویسی در یک مثال واقعی",
-"views":8,
+"views":9,
 "likes":0,
 "duration":1137,
 "tags":[],
@@ -1117,7 +1167,7 @@
 {
 "uid":"rpx2mue",
 "title":"پادکست جلسه اول مکاترونیک1: نقشه راه",
-"views":8,
+"views":9,
 "likes":1,
 "duration":895,
 "tags":[],
@@ -1237,7 +1287,7 @@
 {
 "uid":"zya7636",
 "title":"جلسه ششم هوش مصنوعی: جنگل تصادفی",
-"views":21,
+"views":22,
 "likes":1,
 "duration":1123,
 "tags":[
@@ -1271,7 +1321,7 @@
 {
 "uid":"eon648d",
 "title":"جلسه چهارم هوش مصنوعی: شناسایی سیستم جرم و فنر و دمپر",
-"views":7,
+"views":8,
 "likes":0,
 "duration":879,
 "tags":[],
@@ -1427,7 +1477,7 @@
 {
 "uid":"ctx22b0",
 "title":"جلسه ۱ (پادکست صوتی) — سنسور، ترانسدیوسر، ترانسمیتر | سیستم‌های اندازه‌گیری و کنترل",
-"views":20,
+"views":21,
 "likes":1,
 "duration":1480,
 "tags":[],
