@@ -1,8 +1,8 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-17T07:58:51Z",
-"count":785,
+"generated":"2026-11-17T20:58:46Z",
+"count":786,
 "series":[
 {
 "id":"endnote",
@@ -621,7 +621,7 @@
 "hna2566",
 "oeb53l4"
 ],
-"views":1819,
+"views":1820,
 "duration":28140
 },
 {
@@ -647,7 +647,7 @@
 {
 "id":"measure",
 "title":"سیستم‌های اندازه‌گیری و سنسورها",
-"count":16,
+"count":17,
 "cat":"sensing",
 "uids":[
 "e52l3c9",
@@ -665,10 +665,11 @@
 "ptrh2k0",
 "itb594v",
 "nsdx491",
-"susk356"
+"susk356",
+"cssp5c1"
 ],
-"views":1754,
-"duration":22181
+"views":1757,
+"duration":23251
 },
 {
 "id":"fuzzy-rl-vehicle",
@@ -952,6 +953,22 @@
 }
 ],
 "videos":[
+{
+"uid":"cssp5c1",
+"title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 10: سنسور فاصله سنج اولتراسونیک HC-SR04",
+"views":2,
+"likes":0,
+"duration":1070,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74271351-9695-l__2118.jpg?width=900&quality=90&secret=GHUTSvmztXGpB9DPLg9kcQ",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/08/26",
+"time":"23:53",
+"ts":140508262353,
+"cat":"sensing",
+"series":"measure"
+},
 {
 "uid":"oeb53l4",
 "title":"پادکست جلسه چهارم ریاضی مهندسی پیشرفته: مقادیر و یژه و SVD",
@@ -1251,7 +1268,7 @@
 {
 "uid":"mkx2b85",
 "title":"پادکست جلسه اول درس ریاضی مهندسی پیشرفته: نقشه راه",
-"views":26,
+"views":27,
 "likes":0,
 "duration":1276,
 "tags":[],
@@ -1323,7 +1340,7 @@
 {
 "uid":"ptrh2k0",
 "title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 6: از پردازش تصویر تا کنترل خروجی با آردیونو",
-"views":26,
+"views":27,
 "likes":0,
 "duration":1033,
 "tags":[],
@@ -1339,7 +1356,7 @@
 {
 "uid":"kbwws55",
 "title":"جلسه هفتم هوش مصنوعی: تحلیل داده و طراحی آزمایش",
-"views":17,
+"views":18,
 "likes":1,
 "duration":1437,
 "tags":[],
@@ -1373,7 +1390,7 @@
 {
 "uid":"fieas2e",
 "title":"جلسه پنجم هوش مصنوعی: رگرسیون و طبقه بندی",
-"views":14,
+"views":15,
 "likes":1,
 "duration":1154,
 "tags":[],
@@ -1561,7 +1578,7 @@
 {
 "uid":"vkcew3q",
 "title":"۲ خط کد در مقابل ۱۲ خط: تفاوت هوش مصنوعی و هوش خلاق انسانی با یک مثال عملی در متلب",
-"views":46,
+"views":47,
 "likes":2,
 "duration":728,
 "tags":[
