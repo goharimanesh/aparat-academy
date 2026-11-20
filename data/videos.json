@@ -1,7 +1,7 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-19T20:41:52Z",
+"generated":"2026-11-20T07:22:17Z",
 "count":787,
 "series":[
 {
@@ -621,7 +621,7 @@
 "hna2566",
 "oeb53l4"
 ],
-"views":1829,
+"views":1830,
 "duration":28140
 },
 {
@@ -1102,7 +1102,7 @@
 {
 "uid":"hna2566",
 "title":"پادکست جلسه سوم درس ریاضی مهندسی پیشرفته: مفاهیم کلیدی جبر خطی",
-"views":13,
+"views":14,
 "likes":0,
 "duration":4322,
 "tags":[
@@ -1470,7 +1470,7 @@
 {
 "uid":"dnyn8tn",
 "title":"جلسه دوم هوش مصنوعی: آینده پژوهی",
-"views":26,
+"views":27,
 "likes":0,
 "duration":1148,
 "tags":[
