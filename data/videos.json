@@ -1,7 +1,7 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-24T09:58:28Z",
+"generated":"2026-11-24T22:29:53Z",
 "count":789,
 "series":[
 {
@@ -650,7 +650,7 @@
 "jkqx5sa",
 "jzk7c17"
 ],
-"views":1783,
+"views":1785,
 "duration":25669
 },
 {
@@ -937,7 +937,7 @@
 "tef53n4",
 "jzvouam"
 ],
-"views":189,
+"views":190,
 "duration":6024
 },
 {
@@ -958,7 +958,7 @@
 {
 "uid":"jzk7c17",
 "title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 12: سنسور اندازه گیری دبی سیالات",
-"views":5,
+"views":6,
 "likes":0,
 "duration":1361,
 "tags":[],
@@ -974,7 +974,7 @@
 {
 "uid":"jkqx5sa",
 "title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 11: سنسورهای مجاورتی",
-"views":3,
+"views":4,
 "likes":0,
 "duration":1057,
 "tags":[
@@ -1074,7 +1074,7 @@
 {
 "uid":"pfwrkqc",
 "title":"کار با ADAM-AI: شروع دنیای هوش مصنوعی نرم افزارهای حرفه ای طراحی مهندسی",
-"views":12,
+"views":13,
 "likes":0,
 "duration":936,
 "tags":[
@@ -1158,7 +1158,7 @@
 {
 "uid":"tef53n4",
 "title":"پادکست جلسه سوم مکاترونیک 1: مفاهیک کلیدی سنسورها",
-"views":10,
+"views":11,
 "likes":0,
 "duration":880,
 "tags":[],
@@ -1306,7 +1306,7 @@
 {
 "uid":"rpx2mue",
 "title":"پادکست جلسه اول مکاترونیک1: نقشه راه",
-"views":14,
+"views":15,
 "likes":1,
 "duration":895,
 "tags":[],
@@ -1426,7 +1426,7 @@
 {
 "uid":"zya7636",
 "title":"جلسه ششم هوش مصنوعی: جنگل تصادفی",
-"views":30,
+"views":32,
 "likes":1,
 "duration":1123,
 "tags":[
