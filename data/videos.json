@@ -1,8 +1,8 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-23T23:57:00Z",
-"count":787,
+"generated":"2026-11-24T09:58:28Z",
+"count":789,
 "series":[
 {
 "id":"endnote",
@@ -627,7 +627,7 @@
 {
 "id":"measure",
 "title":"سیستم‌های اندازه‌گیری و سنسورها",
-"count":17,
+"count":19,
 "cat":"sensing",
 "uids":[
 "e52l3c9",
@@ -646,10 +646,12 @@
 "itb594v",
 "nsdx491",
 "susk356",
-"cssp5c1"
+"cssp5c1",
+"jkqx5sa",
+"jzk7c17"
 ],
-"views":1775,
-"duration":23251
+"views":1783,
+"duration":25669
 },
 {
 "id":"python",
@@ -953,6 +955,42 @@
 }
 ],
 "videos":[
+{
+"uid":"jzk7c17",
+"title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 12: سنسور اندازه گیری دبی سیالات",
+"views":5,
+"likes":0,
+"duration":1361,
+"tags":[],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74366725-6427-l__5598.jpg?width=900&quality=90&secret=YghcNM3cXynEHyfYtrlLYw",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/09/03",
+"time":"11:52",
+"ts":140509031152,
+"cat":"sensing",
+"series":"measure"
+},
+{
+"uid":"jkqx5sa",
+"title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 11: سنسورهای مجاورتی",
+"views":3,
+"likes":0,
+"duration":1057,
+"tags":[
+"سنسور",
+"اندازه گیری",
+"سنسور مجاورتی"
+],
+"desc":"",
+"poster":"https://static.cdn.asset.aparat.com/avt/74366720-8133-l__3575.jpg?width=900&quality=90&secret=oxuWMdhPG71S8VQjEpZ1Tw",
+"aparat_cat":"تحصیلات و یادگیری",
+"jdate":"1405/09/03",
+"time":"11:51",
+"ts":140509031151,
+"cat":"sensing",
+"series":"measure"
+},
 {
 "uid":"yvdan7p",
 "title":"مدل سازی بک ربات تک چرخ با استفاده از هوش مصنوعی ADAM",
