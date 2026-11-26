@@ -1,7 +1,7 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-26T08:25:49Z",
+"generated":"2026-11-26T13:19:18Z",
 "count":789,
 "series":[
 {
@@ -650,7 +650,7 @@
 "jkqx5sa",
 "jzk7c17"
 ],
-"views":1789,
+"views":1790,
 "duration":25669
 },
 {
@@ -974,7 +974,7 @@
 {
 "uid":"jkqx5sa",
 "title":"سیستم‌های اندازه‌گیری و کنترل | جلسه 11: سنسورهای مجاورتی",
-"views":6,
+"views":7,
 "likes":0,
 "duration":1057,
 "tags":[
@@ -1508,7 +1508,7 @@
 {
 "uid":"dnyn8tn",
 "title":"جلسه دوم هوش مصنوعی: آینده پژوهی",
-"views":27,
+"views":29,
 "likes":0,
 "duration":1148,
 "tags":[
