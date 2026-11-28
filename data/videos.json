@@ -1,7 +1,7 @@
 {
 "_note":"این فایل به‌صورت خودکار با scripts/aparat_sync.py ساخته می‌شود.",
 "channel":"goharimanesh",
-"generated":"2026-11-27T21:21:40Z",
+"generated":"2026-11-28T07:55:06Z",
 "count":789,
 "series":[
 {
@@ -1306,7 +1306,7 @@
 {
 "uid":"rpx2mue",
 "title":"پادکست جلسه اول مکاترونیک1: نقشه راه",
-"views":15,
+"views":16,
 "likes":1,
 "duration":895,
 "tags":[],
